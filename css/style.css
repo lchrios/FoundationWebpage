@@ -13,6 +13,10 @@ body {
   counter-reset: section;
 }
 
+text {
+  font: 15px arial, sans-serif;
+}
+
 .breadcrumb-counter-nav {
   margin: 0;
   padding: 0;
