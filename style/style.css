@@ -1,3 +1,9 @@
+.img-top {
+    float: left;
+    width: 100px;
+    display: inline-block;
+}
+
 body {
   counter-reset: section;
 }
