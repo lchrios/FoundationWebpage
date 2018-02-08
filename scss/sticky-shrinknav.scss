@@ -1,75 +1,10 @@
 $sticky-shrinknav-menu-height: rem-calc(60);
 $sticky-shrinknav-hero-height: 300px;
 
-html {
-    box-sizing: border-box;
-}
-
-.image-left {
-    float: right;
-    width: 250px;
-    padding-right: 50px;
-    border-radius: 50%;
-
-main {
-    width: 90%;
-    float: left;
-    padding-right: 40px;
-}
-/* Main text */
-article {
-    margin-top: 30px;
-}
-article img {
-    float: left;
-    width: 200px;
-    margin-right: 30px;
-}
-article::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-article p {
-    line-height: 2;
-    text-align: justify;
-}
-article ul {
-    line-height: 2;
-    text-align: justify;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
-/* The main content of the page */
-div.container,
-div.content {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 body {
   padding-top: $sticky-shrinknav-hero-height + 30px;
-  background: repeating-linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
-  font-family: Arial, serif;
 }
-
-header {
-    padding: 25px 0;
-}
-h2 {
-    color: #00b8e4; /* Change this color */
-    margin-bottom: 20px;
-}
-h3 {
-    color: #00b8e4;
-}
-img {
-    float: left;
-    width: 100px;
-    display: inline-block;
 
 .sticky-shrinknav-menu {
   @include horizontal-center;
