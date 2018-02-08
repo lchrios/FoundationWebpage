@@ -43,55 +43,7 @@ img {
     float: right;
     display: inline-block;
 }
-/* Navigation */
-.navigate{
-    background-color: #00a3cc;
-}
-nav {
-    width: 1200px;
-    margin:0 auto;
-    position: relative;
-}
-nav ul {
-    list-style: none;
-}
-nav ul li {
-    border: 1px solid #6495ED;
-}
-nav > ul > li {
-    float: left;
-}
-nav ul::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-nav ul li a {
-    text-transform: uppercase;
-    display: inline-block;
-    color: white;
-    padding: 27px 20px 20px 20px;
-    text-decoration: none;
-    width: 200px;
-    background: #00a3cc;
-    text-align: center;
-}
-nav ul li a:hover {
-    background-color: #DEB887;
-}
-/* Making the sub class not visible */
-nav ul ul {
-    position: absolute;
-    top:100%;
-    background-color: blue;
-    display: none;
-}
-nav ul li:hover > ul {
-    display: block;
-}
-nav ul li:hover {
-    background-color: blue;
-}
+
 /* Content part */
 .below-content {
     padding: 10px 0px 0px 70px;
