@@ -1,89 +1,122 @@
-.logo {
-    float: left;
-    width: 100px;
-    display: inline-block;
+
+.md-tabs {
+  background-color: #1779BA;
+}
+
+.md-tabs > .mobile-nav-bar {
+  background-color: #1779BA;
+  margin-bottom: 15px;
+}
+
+.md-tabs > .mobile-nav-bar .title-bar-text {
+  font-size: 26px;
+}
+
+.md-tabs > .mobile-nav-bar a {
+  color: #fefefe;
+}
+
+.md-tabs > .tabs {
+  margin: 0;
+  border: 0;
+  background: #1779BA;
+  list-style-type: none;
+  display: table;
+  width: 100%;
+}
+
+.md-tabs > .tabs > .tabs-title {
+  display: table-cell;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+
+.md-tabs > .tabs > .tabs-title.is-active > a {
+  color: #3ADB76;
+  background-color: transparent;
+  outline: none;
+}
+
+.md-tabs > .tabs > .tabs-title.is-active:nth-of-type(1) ~ .slide {
+  left: calc((100% / 4) * 0);
+}
+
+.md-tabs > .tabs > .tabs-title.is-active:nth-of-type(2) ~ .slide {
+  left: calc((100% / 4) * 1);
+}
+
+.md-tabs > .tabs > .tabs-title.is-active:nth-of-type(3) ~ .slide {
+  left: calc((100% / 4) * 2);
+}
+
+.md-tabs > .tabs > .tabs-title.is-active:nth-of-type(4) ~ .slide {
+  left: calc((100% / 4) * 3);
+}
+
+.md-tabs > .tabs > .tabs-title > a {
+  color: #fefefe;
+  font-size: 16px;
+}
+
+.md-tabs > .tabs > .tabs-title > a:hover, .md-tabs > .tabs > .tabs-title > a:focus {
+  background: transparent;
+}
+
+.slide {
+  background: #3ADB76;
+  width: calc(100% / 4);
+  height: 4px;
+  position: relative;
+  left: 0;
+  top: 52px;
+  transition: left 0.3s ease-out;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .slide {
+    width: 0;
+    height: 0;
+  }
+  .md-tabs > .accordion {
+    margin-left: 0;
+    list-style-type: none;
+  }
+  .md-tabs > .accordion > .accordion-item > .accordion-title {
+    position: relative;
+    display: block;
+    padding: 1.25rem 1rem;
+    border: 0;
+    font-size: 0.75rem;
+    line-height: 1;
+    background: #1779BA;
+    color: #fefefe;
+  }
+  .md-tabs > .accordion > .accordion-item > .accordion-title:hover {
+    background-color: #1779BA;
+    color: #3ADB76;
+    outline: none;
+  }
+  .md-tabs > .accordion > .is-active.accordion-item > a.accordion-title {
+    border-bottom: 4px solid #3ADB76;
+    color: #3ADB76;
+  }
+  .md-tabs > .accordion > .accordion-item > .accordion-content {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-top: 0px;
+    background-color: #fefefe;
+    color: #0a0a0a;
+  }
+  > .accordion > .accordion-item > .accordion-title:focus {
+    background-color: #1779BA;
+    color: #3ADB76;
+    outline: none;
+  }
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-}
-
-body {
-  counter-reset: section;
-}
-
-text {
-  font: 15px arial, sans-serif;
-}
-
-.breadcrumb-counter-nav {
-  margin: 0;
-  padding: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  list-style: none;
-  background: #2C3E50;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item {
-  position: relative;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  padding: 1rem 2rem;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item:hover {
-  background: #1a252f;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item::before {
-  counter-increment: section;
-  content: counter(section);
-  position: relative;
-  background: #507192;
-  color: #fff;
-  right: 0.8rem;
-  border-radius: 50%;
-  padding: 0.2em 0.55em;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current {
-  background: #1a252f;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -1rem;
-  width: 0;
-  height: 0;
-  border-top: 1.75rem solid transparent;
-  border-bottom: 1.75rem solid transparent;
-  border-left: 1rem solid #1a252f;
-  z-index: 300;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current::before {
-  background-color: #88a4bf;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item a {
-  color: #fff;
-  font-size: 0.875rem;
-}
-
-@media only screen and (max-width: 52em) {
-  .breadcrumb-counter-nav {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
