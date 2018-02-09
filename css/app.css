@@ -36,26 +36,40 @@ h3 {
 }
 img {
     float: center;
-    width: 200px;
+    width: 12px;
     display: inline-block;
 }
 
 .img-left {
     float: left;
-    width: 300px;
+    width: 26rem;
     display: inline-block;
+    margin-left: 8rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
 }
 
 .img-right {
     float: right;
-    width: 300px;
+    width: 20rem;
     display: inline-block;
+    margin-left: 1rem;
+}
+
+.logo {
+  float: centered;
+  width: 15rem;
+  display: inline-block;
 }
 
 
 #copyright {
     float: right;
     display: inline-block;
+}
+
+p{
+  text-align: justify;
 }
 
 /* Content part */
@@ -109,6 +123,23 @@ article ul {
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 10px;
+}
+
+header ul ul {
+    position: absolute;
+    top:100%;
+    background-color: blue;
+    display: none;
+}
+
+header ul li:hover > ul {
+    display: block;
+}
+
+header ul::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 * {box-sizing:border-box}
