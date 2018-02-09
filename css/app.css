@@ -35,10 +35,17 @@ h3 {
     color: #00b8e4;
 }
 img {
-    float: left;
-    width: 3000px;
+    float: center;
+    width: 300px;
     display: inline-block;
 }
+
+.img-left {
+    float: left;
+    width: 300px;
+    display: inline-block;
+}
+
 #copyright {
     float: right;
     display: inline-block;
