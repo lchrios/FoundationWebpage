@@ -46,6 +46,12 @@ img {
     display: inline-block;
 }
 
+.img-right {
+    float: right;
+    width: 300px;
+    display: inline-block;
+}
+
 #copyright {
     float: right;
     display: inline-block;
