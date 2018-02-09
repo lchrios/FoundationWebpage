@@ -1,200 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Here I am, I'm Chris!">
-    <title>Here I am, I'm Chris!</title>
-    <link rel="stylesheet" href="css\style.css">
-    <style>
-      html {
-          box-sizing: border-box;
-      }
-      *, *:before, *:after {
-          box-sizing: inherit;
-      }
-      * {
-          margin:0;
-          padding:0;
-      }
-      .container {
-          margin-left: auto;
-          margin-right: auto;
-      }
-      /* The main content of the page */
-      div.container,
-      div.content {
-          width: 1200px;
-          margin: 0 auto;
-      }
-      body {
-          /*background: linear-gradient(white, black);*/
-          background: repeating-linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
-          font-family: Arial, serif;
-          padding-top: 330px;
-      }
-      header {
-          padding: 25px 0;
-      }
-      h2 {
-          color: #00b8e4; /* Change this color */
-          margin-bottom: 20px;
-      }
-      h3 {
-          color: #00b8e4;
-      }
-      img {
-          float: left;
-          width: 100px;
-          display: inline-block;
-      }
-      #copyright {
-          float: right;
-          display: inline-block;
-      }
-
-      /* Content part */
-      .below-content {
-          padding: 10px 0px 0px 70px;
-      }
-      div.content::after {
-          content: '';
-          display: block;
-          clear: both;
-      }
-      main {
-          width: 90%;
-          float: left;
-          padding-right: 40px;
-      }
-      /* Main text */
-      article {
-          margin-top: 30px;
-      }
-      article img {
-          float: left;
-          width: 200px;
-          margin-right: 30px;
-      }
-      article::after {
-          content: '';
-          display: block;
-          clear: both;
-      }
-      article p {
-          line-height: 2;
-          text-align: justify;
-      }
-      article ul {
-          line-height: 2;
-          text-align: justify;
-      }
-      .image-left {
-          float: right;
-          width: 250px;
-          padding-right: 50px;
-          border-radius: 50%;
-      }
-      .button {
-          background-color: #4682B4;
-          color: white;
-          padding: 10px 30px;
-          text-align: center;
-          display: inline-block;
-          text-decoration: none;
-          text-transform: uppercase;
-          margin-top: 10px;
-      }
-
-      * {box-sizing:border-box}
-
-      .sticky-shrinknav-menu {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-        bottom: 0;
-        height: 3.75rem;
-        line-height: 3.75rem;
-        width: 100%;
-        background-color: rgba(23, 121, 186, 0.1);
-        transition: all 0.5s ease;
-      }
-
-      .sticky-shrinknav-menu li {
-        border-radius: 2px;
-        transition: all 0.3s ease;
-      }
-
-      .sticky-shrinknav-menu li:hover {
-        box-shadow: 0 0 0 1px #fefefe;
-      }
-
-      .sticky-shrinknav-menu a {
-        color: #fefefe;
-      }
-
-      .sticky-shrinknav-header-title {
-        transition: all 0.3s ease;
-        position: relative;
-        -webkit-transform: translateY(-1.875rem);
-            -ms-transform: translateY(-1.875rem);
-                transform: translateY(-1.875rem);
-        margin-bottom: 0;
-        color: #fefefe;
-      }
-
-      .sticky-shrinknav-header {
-        width: 100%;
-        height: 300px;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        background-color: #2196e3;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        transition: all 0.5s ease;
-      }
-
-      body.sticky-shrinknav-wrapper {
-        padding-top: 130px;
-      }
-
-      body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
-        height: 3.75rem;
-        background-color: rgba(23, 121, 186, 0.9);
-      }
-
-      body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
-        -webkit-transform: scale(0);
-            -ms-transform: scale(0);
-                transform: scale(0);
-        transition: all 0.3s ease;
-      }
-    </style>
-    <link rel="stylesheet" href="scss\sticky-shrinknav.scss">
-    <!--script src="js/script.js"></script-->
-    <script>
-      $(function() {
-        $(window).scroll(function() {
-          var winTop = $(window).scrollTop();
-          if (winTop >= 30) {
-            $("body").addClass("sticky-shrinknav-wrapper");
-          } else{
-            $("body").removeClass("sticky-shrinknav-wrapper");
-          }
-        });
-      });
-    </script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <header class="sticky-shrinknav-header">
@@ -240,36 +52,17 @@
                   Pasó la secundaria donde me volví cerrado e introvertido, fue una etapa dura, pero después entré a la preparatoria en otra escuela donde, hasta hoy, considero que es la mejor etapa de mi vida. En primer año conocí muchos amigos que hoy en día los considero verdaderos amigos y que afortunadamente se vinieron también a Guadalajara a estudiar. En primer año me sentí una persona distinta, era un ambiente muy muy ligero y relajado (se me figura mucho al del Tec). En segundo año conocí a mi actual novia con la cual llevamos 2 años juntos, y sé que podría sonar cursi o exagerado o lo que sea, pero conocerla me hizo cambiar para bien. Desde hacía mucho tiempo no me sentía lleno, sentía vacíos en mí, incluso ahora pienso que ella ha llenado vacíos que ni siquiera sabía que estaban ahí.
                   Ahora estoy en universidad, en segundo semestre, preguntándome si lo que estoy haciendo es el camino correcto. El venir acá implicó separarme físicamente de ella pero también el crecer como profesionista. No sé cuál sea el resultado de todo esto que estoy haciendo, tampoco sé si realmente lo que estoy estudiando sea lo mejor para mí, pero intentaré dar lo mejor de mí.</p>
               </div>
-            </div>
-        <!--<article>
-            <h2 id="mellamo">Me llamo</h2>
-            <img src="img/chris.jpg" alt="chris.jpg">
-            <p>Christopher Ismael Ortega González. Actualmente tengo 18 <br>años, estudio Ingeniería en Sistemas Computacionales en <br>el Instituto Tecnológico de Estudios Superiores de Monterrey, <br>en segundo semestre. Este trabajo está hecho para la <br>clase de Diseño Interactivo.<br><br> Hola ¡Martin! Si lees esto, ponme 100 8).</p><br><br>
-            <div class="below-content">
-                <h3>Datos:</h3>
-                <ul>
-                    <li>La información se reparte en páginas no muy grandes enlazadas entre sí.</li>
-                    <li>Es hipertexto y es muy fácil navegar en este.</li>
-                    <li>Es compitable con todo todos los navegadores.</li>
-                    <li>Dinámico: el proceso de cambiar y actualizar la información era ágil y rápido.</li>
-                </ul><br><hr>
-            </div>
-        </article>
-        <article>
-          <h2 id="auto">Autobiografía</h2>
-          <img src="img/moi.jpg" alt="moi.jpg">
-          <p>Mi nombre es Christopher Ismael Ortega González, nací el 28 de Septiembre de 1999 en el hospital Angel Leaño en Zapopan, Jalisco, México. Tengo un hermano menor, le llevo 8 años, se llama Marco Sebastián Ortega González. Mis padres son Christian Ortega y Nayeli González, me tuvieron a los 20 años de edad. Mi familia materna es originaria de Ixtlán del Río, Nayarit, un pueblo pequeño pero bastante emblemático de Nayarit; mi familia paterna es de Tepic, también en Nayarit.
-          Realmente la mayor parte de la información sobre mis primeros años la tengo gracias a mis abuelos, que fue con ellos con quien pase la mayor parte de mis primeros dos años. Durante mi primer año estuve en Tepic recibiendo lactancia y lo que todo bebé debería recibir. Después de eso estuve casi un año en Morelia con mis abuelos maternos, ya que mi abuelo tenía que trabajar ahí y mi abuela es jubilada me fui con ellos casi un año, después de eso volvimos a Tepic, donde he vivido hasta la fecha.
-          Estuve en la misma escuela durante doce años, desde preescolar hasta terminar la secundaria. Fue una etapa de mi vida bastante bonita porque sentía que todo era muchísimo más sencillo, lo que más disfrutaba era ir a Estados Unidos a visitar familia cada año. A mis 10 años pasó algo, que en mi opinión, fue un golpe muy duro sobre todo para mi familia. En ese año (2010) se accidentó mi padre y falleció. Aún conservo un poco de rencor a mi familia y tal vez ahí nació mi disgusto a la iglesia católica (no a la religión en sí, sino a la iglesia exclusivamente).</p>
-          <br><p>Porque quien me dio la noticia fue el padre de la iglesia a la que asistíamos. Y, a pesar de que la pérdida de mi padre fue algo muy duro y doloroso que tuvo consecuencias aún después de eso, siento que algo positivo nació de ahí (porque creo que debemos de buscar algo positivo aún de las cosas negativas que nos sucedan), la muerte de mi padre me hizo madurar y darme cuenta de que a pesar de que todavía tenía edad de un niño no era como los demás niños; mi madre empezó a trabajar en las tardes y por consiguiente no la veíamos, por lo tanto, desde que falleció mi padre estuve al lado de mi hermano siempre (hasta ahora que me vine a estudiar).
-            Pasó la secundaria donde me volví cerrado e introvertido, fue una etapa dura, pero después entré a la preparatoria en otra escuela donde, hasta hoy, considero que es la mejor etapa de mi vida. En primer año conocí muchos amigos que hoy en día los considero verdaderos amigos y que afortunadamente se vinieron también a Guadalajara a estudiar. En primer año me sentí una persona distinta, era un ambiente muy muy ligero y relajado (se me figura mucho al del Tec). En segundo año conocí a mi actual novia con la cual llevamos 2 años juntos, y sé que podría sonar cursi o exagerado o lo que sea, pero conocerla me hizo cambiar para bien. Desde hacía mucho tiempo no me sentía lleno, sentía vacíos en mí, incluso ahora pienso que ella ha llenado vacíos que ni siquiera sabía que estaban ahí.
-            Ahora estoy en universidad, en segundo semestre, preguntándome si lo que estoy haciendo es el camino correcto. El venir acá implicó separarme físicamente de ella pero también el crecer como profesionista. No sé cuál sea el resultado de todo esto que estoy haciendo, tampoco sé si realmente lo que estoy estudiando sea lo mejor para mí, pero intentaré dar lo mejor de mí.</p>
-        </article> -->
+            </div
         <br><br><hr><br><br>
         <footer>
           <h3>Copyright 2017 ®</h3>
         </footer>
       </main>
     </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
